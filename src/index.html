@@ -5,13 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Website Title -->
-    <title>SideBar Menu built using HTML, CSS, and JavaScript!</title>
+    <title>Dashboard Sidebar Menu built using HTML, CSS, and JavaScript!</title>
     <!-- Import CSS Styling -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Import Google Fonts -->
-    <link rel="stylesheet" href="" />
+    <!-- Import Boxicons CSS  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <!-- Logo -->
+            <!-- <img src="" alt=""> -->
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">Steven Zhao</span>
+            <span class="profession">Web Developer</span>
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" placeholder="Search here" />
+          </li>
+
+          <ul class="menu-links">
+            <!-- Dashboard -->
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <!-- Revenue -->
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="text nav-text">Revenue</span>
+              </a>
+            </li>
+            <!-- Notifications -->
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-bell icon"></i>
+                <span class="text nav-text">Notifications</span>
+              </a>
+            </li>
+            <!-- Analytics -->
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-pie-chart-alt icon"></i>
+                <span class="text nav-text">Analytics</span>
+              </a>
+            </li>
+            <!-- Likes -->
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">Likes</span>
+              </a>
+            </li>
+            <!-- Wallets -->
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">Wallets</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+          <li class="">
+            <a href="#">
+              <i class="bx bx-log-out icon"></i>
+              <span class="text nav-text">Logout</span>
+            </a>
+          </li>
+
+          <li class="mode">
+            <div class="sun-moon">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="text">Dashboard Sidebar</div>
+    </section>
+
     <script src="index.js"></script>
   </body>
 </html>
